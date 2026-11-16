@@ -62,7 +62,7 @@ export function TitleLandingView({ onStartSetup, onOpenStudyGuide }: TitleLandin
             </div>
 
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-[#3F624C]">
-              <span>คลังคำถาม 32 ข้อ (สุ่มใหม่ทุกรอบ)</span>
+              <span>คลังคำถาม 48 ข้อ (สุ่มคำถามและสลับตำแหน่งตัวเลือกทุกรอบ)</span>
               <span aria-hidden="true">·</span>
               <span>4 ตัวเลือก · ถูก-ผิด · ภารกิจพิเศษ · โบนัส</span>
             </div>

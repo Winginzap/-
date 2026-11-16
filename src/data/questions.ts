@@ -550,7 +550,239 @@ export const QUESTION_BANK: GameQuestion[] = [
     explanation:
       'เข้าหาแสง = Phototropism, พันหลักเมื่อสัมผัสแบบมีทิศทาง = Thigmotropism, และงับแมลงแบบทิศทางคงที่ = Thigmonasty',
   },
+
+  // =========================================================
+  // คำถามเพิ่มเติมชุดที่ 2 เพื่อเพิ่มความหลากหลาย (16 ข้อ รวมเป็น 48 ข้อ)
+  // =========================================================
+  {
+    id: 'org-11',
+    topic: 'organic_substances',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'สารอินทรีย์กลุ่มใดที่เป็นส่วนประกอบหลักของ "เยื่อหุ้มเซลล์" และสะสมพลังงานในเมล็ดพืชน้ำมัน เช่น ทานตะวันและถั่วเหลือง?',
+    options: [
+      'แอลคาลอยด์',
+      'ลิพิด (ไขมันและฟอสโฟลิพิด)',
+      'ฟีนอลิก',
+      'กรดนิวคลีอิก',
+    ],
+    correctIndex: 1,
+    explanation:
+      'ลิพิดเป็นสารอินทรีย์ที่จำเป็นต่อการเจริญเติบโตโดยตรง ใช้สร้างเยื่อหุ้มเซลล์ (ฟอสโฟลิพิด) และเก็บสะสมพลังงานในเมล็ด',
+  },
+  {
+    id: 'org-12',
+    topic: 'organic_substances',
+    type: 'true_false',
+    points: 10,
+    prompt: 'ถูกหรือผิด: สาร "ลิกนิน (Lignin)" ที่แทรกในผนังเซลล์ช่วยให้เนื้อไม้และท่อลำเลียงน้ำแข็งแรงทนทาน จัดเป็นสารกลุ่มฟีนอลิก',
+    correctAnswer: true,
+    explanation:
+      'ถูกต้อง! ลิกนินเป็นสารประกอบฟีนอลิกที่ช่วยเสริมความแข็งแรงของผนังเซลล์ทุติยภูมิในท่อไซเล็มและเนื้อไม้',
+  },
+  {
+    id: 'org-13',
+    topic: 'organic_substances',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'สาร "แคปไซซิน (Capsaicin)" ที่ทำให้พริกมีรสเผ็ดร้อน เพื่อป้องกันไม่ให้สัตว์เลี้ยงลูกด้วยนมมากัดกินผลพริก จัดอยู่ในกลุ่มใด?',
+    options: [
+      'คาร์โบไฮเดรต',
+      'กรดอะมิโน',
+      'แอลคาลอยด์',
+      'เทอร์พีนอยด์',
+    ],
+    correctIndex: 2,
+    explanation:
+      'แคปไซซินเป็นสารกลุ่มแอลคาลอยด์ (ไม่จำเป็นต่อการเจริญเติบโตโดยตรง) ที่สร้างความแสบร้อนเพื่อป้องกันสัตว์กินผลพริก',
+  },
+  {
+    id: 'org-14',
+    topic: 'organic_substances',
+    type: 'true_false',
+    points: 10,
+    prompt: 'ถูกหรือผิด: โปรตีนและเอนไซม์ในเซลล์พืช จัดเป็นสารอินทรีย์ที่ไม่จำเป็นต่อการเจริญเติบโตโดยตรง',
+    correctAnswer: false,
+    explanation:
+      'ผิด! โปรตีนจำเป็นต่อการเจริญเติบโตของพืชโดยตรงอย่างยิ่ง เพราะทำหน้าที่เป็นเอนไซม์เร่งปฏิกิริยาและเป็นโครงสร้างสำคัญในเซลล์',
+  },
+  {
+    id: 'org-15',
+    topic: 'organic_substances',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'สีเหลือง ส้ม และแดงสดใสของดอกดาวเรืองหรือผลมะละกอสุก เกิดจากรงควัตถุกลุ่มใดที่ช่วยดึงดูดแมลงและสัตว์?',
+    options: [
+      'เซลลูโลส',
+      'ลิกนิน',
+      'กรดนิวคลีอิก',
+      'แคโรทีนอยด์ (กลุ่มเทอร์พีน)',
+    ],
+    correctIndex: 3,
+    explanation:
+      'แคโรทีนอยด์เป็นสารกลุ่มเทอร์พีนที่ให้สีเหลือง ส้ม หรือแดง ช่วยทั้งรับแสงในการสังเคราะห์ด้วยแสงและดึงดูดแมลงผสมเกสร',
+  },
+  {
+    id: 'org-16',
+    topic: 'organic_substances',
+    type: 'bonus',
+    points: 20,
+    prompt: 'คำถามโบนัส! "น้ำยางขาว" ที่เกษตรกรกรีดได้จากต้นยางพารา จัดเป็นสารกลุ่มใด และมีประโยชน์ต่อต้นยางพาราอย่างไร?',
+    options: [
+      'กลุ่มเทอร์พีน ช่วยอุดบาดแผลและป้องกันแมลงศัตรูพืช',
+      'กลุ่มคาร์โบไฮเดรต ใช้ลำเลียงอาหารไปยังราก',
+      'กลุ่มโปรตีน ใช้สร้างคลอโรฟิลล์ในใบ',
+      'กลุ่มกรดนิวคลีอิก ใช้แบ่งเซลล์ที่ปลายยอด',
+    ],
+    correctIndex: 0,
+    explanation:
+      'น้ำยางพาราเป็นพอลิเมอร์ในกลุ่มเทอร์พีน (สารไม่จำเป็นโดยตรง) เมื่อเปลือกไม้เกิดบาดแผล น้ำยางจะไหลออกมาอุดแผลและไล่แมลง',
+  },
+  {
+    id: 'gro-13',
+    topic: 'growth_factors',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'ธาตุ "โพแทสเซียม (K)" มีบทบาทสำคัญต่อการดำรงชีวิตของพืชในข้อใดมากที่สุด?',
+    options: [
+      'ควบคุมการเปิด-ปิดของปากใบ และการสะสมแป้งและน้ำตาล',
+      'เป็นองค์ประกอบหลักของแก๊สออกซิเจน',
+      'ทำให้เมล็ดเข้าสู่ระยะพักตัวไม่ยอมงอก',
+      'เปลี่ยนสีกลีบดอกให้กลายเป็นสีฟ้า',
+    ],
+    correctIndex: 0,
+    explanation:
+      'โพแทสเซียมไอออน (K⁺) ช่วยควบคุมแรงดันเต่งของเซลล์คุมในการเปิด-ปิดปากใบ และช่วยลำเลียงสะสมน้ำตาลกับแป้ง',
+  },
+  {
+    id: 'gro-14',
+    topic: 'growth_factors',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'ช่วงแสงสีใดที่คลอโรฟิลล์ของพืชสามารถดูดกลืนไปใช้ในการสังเคราะห์ด้วยแสงได้ดีที่สุด?',
+    options: [
+      'แสงสีเขียวและสีเหลือง',
+      'แสงสีน้ำเงินและแสงสีแดง',
+      'รังสีอินฟราเรดเท่านั้น',
+      'แสงสีขาวสะท้อนทั้งหมด',
+    ],
+    correctIndex: 1,
+    explanation:
+      'คลอโรฟิลล์ดูดกลืนแสงช่วงสีน้ำเงินและสีแดงได้ดีที่สุด ส่วนแสงสีเขียวถูกสะท้อนออกมา เราจึงเห็นใบไม้เป็นสีเขียว',
+  },
+  {
+    id: 'gro-15',
+    topic: 'growth_factors',
+    type: 'true_false',
+    points: 10,
+    prompt: 'ถูกหรือผิด: การวาง "กล้วยสุก" ไว้ในถุงปิดสนิทกับ "มะม่วงดิบ" จะช่วยให้มะม่วงสุกเร็วขึ้นเพราะกล้วยสุกปล่อยแก๊สเอทิลีนออกมา',
+    correctAnswer: true,
+    explanation:
+      'ถูกต้อง! ผลไม้สุกจะปล่อยฮอร์โมนแก๊สเอทิลีนออกมา ซึ่งช่วยกระตุ้นให้ผลไม้ดิบที่อยู่ใกล้เคียงสุกเร็วขึ้น',
+  },
+  {
+    id: 'gro-16',
+    topic: 'growth_factors',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'หากต้องการบำรุงต้นพืชให้ "ออกดอก ติดผลดก และเร่งการเจริญเติบโตของราก" ควรเน้นธาตุอาหารหลักใด?',
+    options: [
+      'โซเดียม (Na)',
+      'คลอรีน (Cl)',
+      'ฟอสฟอรัส (P)',
+      'คาร์บอนมอนอกไซด์ (CO)',
+    ],
+    correctIndex: 2,
+    explanation:
+      'ฟอสฟอรัส (P) เป็นองค์ประกอบของ ATP และกรดนิวคลีอิก จึงช่วยเร่งการแตกราก การออกดอก และการติดผลของพืช',
+  },
+  {
+    id: 'res-11',
+    topic: 'plant_responses',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'ในดินที่ค่อนข้างแห้ง รากพืชจะเจริญโค้งงอไปทางบริเวณที่มีความชื้นหรือแหล่งน้ำ การตอบสนองนี้เรียกว่าอะไร?',
+    options: [
+      'Hydrotropism (การเบนเข้าหาน้ำ)',
+      'Phototropism (การเบนเข้าหาแสง)',
+      'Nyctinasty (การหุบใบกลางคืน)',
+      'Thermonasty (การบานตามอุณหภูมิ)',
+    ],
+    correctIndex: 0,
+    explanation:
+      'รากพืชรับรู้ความแตกต่างของความชื้นแล้วเจริญเข้าหาบริเวณที่มีน้ำ เรียกว่า Positive Hydrotropism',
+  },
+  {
+    id: 'res-12',
+    topic: 'plant_responses',
+    type: 'true_false',
+    points: 10,
+    prompt: 'ถูกหรือผิด: การที่ดอกบัวหรือดอกคุณนายตื่นสายบานเมื่อได้รับแสงในตอนเช้า และหุบในตอนเย็น เรียกว่า Photonasty',
+    correctAnswer: true,
+    explanation:
+      'ถูกต้อง! Photonasty เป็นการตอบสนองต่อความเข้มแสงแบบไม่มีทิศทางสัมพันธ์กับสิ่งเร้า โดยกลีบดอกจะบานหรือหุบในทิศทางคงที่',
+  },
+  {
+    id: 'res-13',
+    topic: 'plant_responses',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'เมื่อแมลงบินมาแตะขนสัมผัสภายในใบของ "ต้นกาบหอยแครง" ใบจะงับเข้าหากันอย่างรวดเร็ว การตอบสนองนี้จัดเป็นแบบใด?',
+    options: [
+      'Thigmotropism',
+      'Gravitropism',
+      'Chemotropism',
+      'Thigmonasty',
+    ],
+    correctIndex: 3,
+    explanation:
+      'ใบต้นกาบหอยแครงงับเข้าหากันในแนวเดิมเสมอไม่ว่าแมลงจะสัมผัสโดนจุดไหน จึงเป็นการตอบสนองแบบไม่มีทิศทางสัมพันธ์กับสิ่งเร้า (Thigmonasty)',
+  },
+  {
+    id: 'res-14',
+    topic: 'plant_responses',
+    type: 'multiple_choice',
+    points: 10,
+    prompt: 'ดอกทิวลิปมักบานเมื่ออุณหภูมิของอากาศสูงขึ้น และจะหุบกลีบดอกเมื่ออุณหภูมิลดต่ำลง เรียกการตอบสนองนี้ว่าอะไร?',
+    options: [
+      'Thermonasty',
+      'Hydrotropism',
+      'Phototropism',
+      'Thigmotropism',
+    ],
+    correctIndex: 0,
+    explanation:
+      'Thermonasty เป็นการเคลื่อนไหวที่ตอบสนองต่อสิ่งเร้าคือ "อุณหภูมิ" แบบไม่มีทิศทางสัมพันธ์กับสิ่งเร้า',
+  },
+  {
+    id: 'res-15',
+    topic: 'plant_responses',
+    type: 'true_false',
+    points: 10,
+    prompt: 'ถูกหรือผิด: โดยทั่วไป ยอดของพืชจะเบนเข้าหาแสง (Positive Phototropism) ส่วนรากพืชส่วนใหญ่จะเจริญหนีแสง (Negative Phototropism)',
+    correctAnswer: true,
+    explanation:
+      'ถูกต้อง! ยอดต้องการแสงเพื่อสังเคราะห์ด้วยแสงจึงเบนเข้าหาแสง ส่วนรากต้องชอนไชลงดินหาน้ำจึงเบนหนีแสง',
+  },
+  {
+    id: 'res-16',
+    topic: 'plant_responses',
+    type: 'bonus',
+    points: 20,
+    prompt: 'คำถามโบนัส! เพราะเหตุใดปลายยอดของต้นกล้าจึงโค้งงอ "เข้าหาแสง" เมื่อได้รับแสงสว่างจากด้านข้างเพียงด้านเดียว?',
+    options: [
+      'ออกซินเคลื่อนย้ายไปสะสมด้านที่มืดมากกว่า ทำให้เซลล์ด้านมืดยืดยาวเร็วกว่าด้านสว่าง',
+      'ออกซินถูกทำลายหมดทั้งสองด้าน ทำให้ยอดล้มเอียงลงตามแรงลม',
+      'น้ำระเหยออกจากด้านสว่างหมด ทำให้ด้านสว่างพองตัวขยายใหญ่ขึ้น',
+      'คลอโรฟิลล์ดันยอดให้โค้งไปด้านที่มีอุณหภูมิต่ำกว่า',
+    ],
+    correctIndex: 0,
+    explanation:
+      'เมื่อแสงเข้าด้านข้าง ออกซินจะเคลื่อนไปยังด้านที่ได้รับแสงน้อยกว่า กระตุ้นให้เซลล์ด้านนั้นยืดยาวมากกว่าด้านสว่าง ยอดจึงโค้งเข้าหาแสง',
+  },
 ];
+
+const RECENT_QIDS_STORAGE_KEY = 'plant_kingdom_recent_qids_v1';
 
 function shuffleArray<T>(items: T[]): T[] {
   const arr = [...items];
@@ -562,54 +794,153 @@ function shuffleArray<T>(items: T[]): T[] {
 }
 
 /**
+ * Shuffles the 4 options of a multiple-choice/bonus question (updating correctIndex)
+ * and shuffles items/pairs in special missions so answers are never stuck in fixed positions (e.g. always ก).
+ */
+function randomizeQuestionChoices(q: GameQuestion): GameQuestion {
+  if (q.type === 'multiple_choice' || q.type === 'bonus') {
+    const indexed = q.options.map((text, idx) => ({
+      text,
+      isCorrect: idx === q.correctIndex,
+    }));
+    const shuffled = shuffleArray(indexed);
+    const newCorrectIndex = shuffled.findIndex((item) => item.isCorrect);
+    return {
+      ...q,
+      options: [
+        shuffled[0].text,
+        shuffled[1].text,
+        shuffled[2].text,
+        shuffled[3].text,
+      ],
+      correctIndex: newCorrectIndex,
+    };
+  }
+
+  if (q.type === 'special_mission' && q.missionMode === 'classify') {
+    const shuffledItems = shuffleArray(q.items);
+    return {
+      ...q,
+      items: [shuffledItems[0], shuffledItems[1], shuffledItems[2]],
+    };
+  }
+
+  if (q.type === 'special_mission' && q.missionMode === 'match') {
+    const shuffledPairs = shuffleArray(q.pairs);
+    return {
+      ...q,
+      pairs: [shuffledPairs[0], shuffledPairs[1], shuffledPairs[2]],
+    };
+  }
+
+  return q;
+}
+
+function getRecentQuestionIds(): string[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    const raw = window.localStorage.getItem(RECENT_QIDS_STORAGE_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveRecentQuestionIds(ids: string[]) {
+  if (typeof window === 'undefined') return;
+  try {
+    window.localStorage.setItem(RECENT_QIDS_STORAGE_KEY, JSON.stringify(ids));
+  } catch {
+    // Ignore storage quota errors gracefully
+  }
+}
+
+/**
+ * Picks items prioritizing questions that weren't played in the most recent rounds,
+ * so consecutive games always feel fresh and avoid repeating the same questions.
+ */
+function pickFreshFirst<T extends { id: string }>(
+  items: T[],
+  count: number,
+  recentIds: Set<string>
+): T[] {
+  const unseen = shuffleArray(items.filter((q) => !recentIds.has(q.id)));
+  const seen = shuffleArray(items.filter((q) => recentIds.has(q.id)));
+  return [...unseen, ...seen].slice(0, count);
+}
+
+/**
  * Builds a randomized, well-paced deck of questions for a game session.
- * Guarantees a balanced mix of 4-choice, True/False, Special Missions (+15), and Bonus (+20) questions.
+ * Guarantees:
+ * 1) Shuffled order and unseen-first rotation across games.
+ * 2) Randomized answer positions (ก, ข, ค, ง) on every question.
+ * 3) Balanced mix of 4-choice, True/False, Special Missions (+15), and Bonus (+20) questions.
  */
 export function buildGameDeck(
   totalQuestions: number,
   topicFilter: TopicId | 'all'
 ): GameQuestion[] {
+  const recentList = getRecentQuestionIds();
+  const recentSet = new Set(recentList);
+
   const pool =
     topicFilter === 'all'
       ? QUESTION_BANK
       : QUESTION_BANK.filter((q) => q.topic === topicFilter);
 
-  const regular = shuffleArray(
-    pool.filter((q) => q.type === 'multiple_choice' || q.type === 'true_false')
+  const regularPool = pool.filter(
+    (q) => q.type === 'multiple_choice' || q.type === 'true_false'
   );
-  const specials = shuffleArray(pool.filter((q) => q.type === 'special_mission'));
-  const bonuses = shuffleArray(pool.filter((q) => q.type === 'bonus'));
+  const specialPool = pool.filter((q) => q.type === 'special_mission');
+  const bonusPool = pool.filter((q) => q.type === 'bonus');
 
-  // When filtering a single topic (10-12 questions), repeat/supplement cleanly if user selected 20+ or cap naturally
+  let finalDeck: GameQuestion[] = [];
+
   if (topicFilter !== 'all') {
-    const combined = shuffleArray([...regular, ...specials, ...bonuses]);
-    if (combined.length >= totalQuestions) {
-      return combined.slice(0, totalQuestions);
+    const primary = pickFreshFirst(pool, totalQuestions, recentSet);
+    if (primary.length >= totalQuestions) {
+      finalDeck = shuffleArray(primary);
+    } else {
+      const remainingNeeded = totalQuestions - primary.length;
+      const otherPool = QUESTION_BANK.filter((q) => q.topic !== topicFilter);
+      const supplement = pickFreshFirst(otherPool, remainingNeeded, recentSet);
+      finalDeck = shuffleArray([...primary, ...supplement]);
     }
-    // If single topic has fewer than totalQuestions, fill remaining from all topics so every game stays 20-30 questions
-    const remainingNeeded = totalQuestions - combined.length;
-    const otherPool = shuffleArray(QUESTION_BANK.filter((q) => q.topic !== topicFilter));
-    return [...combined, ...otherPool.slice(0, remainingNeeded)];
+  } else {
+    const targetSpecialCount = totalQuestions >= 25 ? 5 : 4;
+    const targetBonusCount = totalQuestions >= 25 ? 4 : 3;
+    const targetRegularCount = Math.max(
+      0,
+      totalQuestions - targetSpecialCount - targetBonusCount
+    );
+
+    const chosenSpecials = pickFreshFirst(specialPool, targetSpecialCount, recentSet);
+    const chosenBonuses = pickFreshFirst(bonusPool, targetBonusCount, recentSet);
+    const chosenRegular = pickFreshFirst(regularPool, targetRegularCount, recentSet);
+
+    const deck: GameQuestion[] = [...chosenRegular];
+    const exciting = shuffleArray([...chosenSpecials, ...chosenBonuses]);
+
+    exciting.forEach((item, idx) => {
+      const step = Math.max(2, Math.floor(deck.length / (exciting.length + 1)));
+      const insertAt = Math.min(deck.length, (idx + 1) * step + idx);
+      deck.splice(insertAt, 0, item);
+    });
+
+    finalDeck = deck.slice(0, totalQuestions);
   }
 
-  // Full deck mode (32 questions total): pick balanced counts
-  const targetSpecialCount = totalQuestions >= 25 ? 5 : 4;
-  const targetBonusCount = totalQuestions >= 25 ? 3 : 3;
-  const targetRegularCount = Math.max(0, totalQuestions - targetSpecialCount - targetBonusCount);
+  // Record used IDs; if nearly the whole bank has been cycled through, keep only the newest round so rotation restarts cleanly
+  const newUsedIds = finalDeck.map((q) => q.id);
+  const mergedRecent = [...recentList, ...newUsedIds];
+  const dedupedRecent = Array.from(new Set(mergedRecent));
+  if (dedupedRecent.length >= QUESTION_BANK.length - 6) {
+    saveRecentQuestionIds(newUsedIds);
+  } else {
+    saveRecentQuestionIds(dedupedRecent);
+  }
 
-  const chosenSpecials = specials.slice(0, targetSpecialCount);
-  const chosenBonuses = bonuses.slice(0, targetBonusCount);
-  const chosenRegular = regular.slice(0, targetRegularCount);
-
-  // Interleave special & bonus questions smoothly throughout the game rather than clumping them
-  const deck: GameQuestion[] = [...chosenRegular];
-  const exciting = shuffleArray([...chosenSpecials, ...chosenBonuses]);
-
-  exciting.forEach((item, idx) => {
-    const step = Math.max(2, Math.floor(deck.length / (exciting.length + 1)));
-    const insertAt = Math.min(deck.length, (idx + 1) * step + idx);
-    deck.splice(insertAt, 0, item);
-  });
-
-  return deck.slice(0, totalQuestions);
+  // Randomize choice positions (ก, ข, ค, ง) on every question in the deck
+  return finalDeck.map(randomizeQuestionChoices);
 }
