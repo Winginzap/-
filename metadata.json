@@ -1,0 +1,6 @@
+{
+  "name": "ภารกิจพิชิตอาณาจักรพืช",
+  "description": "เกมการศึกษาตอบคำถามวิชาชีววิทยา บทที่ 3 เรื่อง การดำรงชีวิตของพืช สำหรับนักเรียนมัธยม รองรับการเล่นเป็นทีม 2–5 ทีม",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

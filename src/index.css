@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Prompt", "Noto Sans Thai", system-ui, sans-serif;
+  --font-sans: "Noto Sans Thai", "Prompt", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes floatUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.9);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px) scale(1.06);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-34px) scale(0.95);
+  }
+}
+
+@keyframes confettiFall {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, -10px, 0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(var(--tx, 30px), 220px, 0) rotate(var(--rot, 320deg));
+  }
+}
+
+.animate-float-score {
+  animation: floatUpFade 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-confetti-piece {
+  animation: confettiFall 1.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-score,
+  .animate-confetti-piece {
+    animation: none !important;
+  }
+}
